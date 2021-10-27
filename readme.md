@@ -20,13 +20,13 @@ Each plugin directory must contain a manifest.json file in the following format:
 ### Source Plugins
 Source plugins must export a `check` function in the following format:
 ```js
-exports.check = async function(pushToQueue)
+exports.check = async function(pluginManager)
 {
 	// Do your checking
 	// ...
 	
 	// Push to queue
-	pushToQueue({
+	pluginManager.pushToQueue({
 		source: "My Plugin Name",
 		message: "Some message"
 	});

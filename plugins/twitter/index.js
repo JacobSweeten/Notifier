@@ -1,7 +1,7 @@
-exports.check = async function(pushToQueue)
+exports.check = async function(pluginManager)
 {
 	// TODO: Finish
-	pushToQueue({
+	pluginManager.pushToQueue({
 		source: "twitter",
 		message: "I have something really cool!"
 	});
