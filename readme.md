@@ -9,7 +9,7 @@ data from the internet and push it to whatever platform you wish!
 
 ## Writing plugins:
 ### manifest.json
-Each plugin directory must contain a manifest.json in the following format:
+Each plugin directory must contain a manifest.json file in the following format:
 ```json
 {
 	"name": "Plugin Name",

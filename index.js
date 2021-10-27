@@ -57,6 +57,19 @@ function initConfig()
 		console.error("checkdelayms is not a number. Exiting.");
 		process.exit(1);
 	}
+
+	// Check pushdelayms variable
+	if(configObj["pushdelayms"] === undefined)
+	{
+		console.error("Missing config \"pushdelayms\". Exiting");
+		process.exit(1);
+	}
+
+	if(!/^[0-9]+$/.test(configObj["pushdelayms"]))
+	{
+		console.error("pushdelayms is not a number. Exiting.");
+		process.exit(1);
+	}
 }
 
 function loadPlugin(dir)
