@@ -1,0 +1,7 @@
+{
+	"name": "notifier",
+	"dependencies": {
+		"ini": "^2.0.0",
+		"md5": "^2.3.0"
+	}
+}

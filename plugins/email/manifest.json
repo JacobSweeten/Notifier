@@ -1,0 +1,5 @@
+{
+	"name": "email",
+	"main": "index.js",
+	"type": "destination"
+}
